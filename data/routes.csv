@@ -1,0 +1,2 @@
+Route Name,Ballast Leg,Laden Leg,Ballast Distance nm,Laden Distance nm,Sea Margin %,Load Rate mt/day,Discharge Rate mt/day,Waiting Days,Load Port Cost USD,Discharge Port Cost USD,Canal Cost USD
+C5 Qingdao-Dampier-Qingdao Round Voyage,Qingdao to Dampier,Dampier to Qingdao,3532,3532,5.0,80000,30000,0.0,140000,120000,0

@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.streamlit/
+.venv/
+venv/
+env/
+.env
+.agents/
+.codex/
+*.log
+*.xlsx
