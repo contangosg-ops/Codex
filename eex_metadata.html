@@ -1,0 +1,307 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+
+<script type='text/javascript' src='https://eds.eex-group.com/widgets/pub/lib/v1/jquery/jquery-3.6.4.min.js'></script>
+
+<div id='eex_marketDataHub_1765265036641'>
+</div>
+
+<script type='text/javascript'>
+
+  let eex_marketDataHub_1765265036641 = {
+    rootDiv: undefined,
+    generatedId: 'eex_marketDataHub_1765265036641',
+    baseUrl: 'https://api.eex-group.com/pub/market-data',
+    customizeUrl: 'https://api.eex-group.com/pub/customise-widget',
+    appliedParameters: {
+      contracts: [{commodity: "All",pricing: "All",area: "All",product: "All",productSpecific: "All",maturityType: "All",}],
+      upcomingAreas: [],
+      upcomingProducts: [],
+
+      withOverview: true,
+      withTableView: true,
+      withChartView: true,
+      withOpenInterestGross: true,
+      withOpenInterestInLots: true,
+      withVolume: true,
+      withLots: true,
+
+      marketDataHubMainBgColor: '#ffffff',
+      filterPanelBgColor: '#e2e2e2',
+      filterPanelLabelsColor: '#000000',
+      filterPanelGoBtnColor: '#eb1000',
+      filterPanelGoBtnTextColor: '#ffffff',
+      filterPanelResetBtnColor: '#3c3c3c',
+      filterPanelResetBtnTextColor: '#ffffff',
+      filterPanelRadioBtnColor: '#eb1000',
+
+      marketDataHubNavigationActiveBtnColor: '#eb1000',
+      marketDataHubNavigationActiveBtnTextColor: '#ffffff',
+      marketDataHubNavigationBtnColor: '#3c3c3c',
+      marketDataHubNavigationBtnTextColor: '#ffffff',
+
+      marketDataHubPriceTickerBgColor: '#3c3c3c',
+      marketDataHubPriceTickerContractColor: '#ffffff',
+      marketDataHubPriceTickerLastUpdatedColor: '#ffffff',
+      marketDataHubPriceTickerMoreDetailsColor: '#ffffff',
+      marketDataHubPriceTickerMoreDetailsTextColor: '#ffffff',
+      marketDataHubPriceTickerMoreDetailsLinkColor: '#ffb2b7',
+      marketDataHubPriceTickerNegativeColor: '#eb1000',
+      marketDataHubPriceTickerPositiveColor: '#9cb704',
+      marketDataHubPriceTickerPriceColor: '#ffffff',
+      marketDataHubPriceTickerPriceLabelColor: '#ffffff',
+      marketDataHubPriceTickerUnchangedColor: '#ababab',
+
+      marketDataHubMapActiveCountryColor: '#eb1000',
+      marketDataHubMapComingSoonCountryColor: '#ff8790',
+      marketDataHubMapActiveCountryHoverColor: '#680300',
+      marketDataHubMapInactiveCountryColor: '#f7f7f7',
+      marketDataHubMapLabelsColor: '#000000',
+      marketDataHubMapLegendsColor: '#000000',
+      marketDataHubMapRadioLabelsColor: '#000000',
+      marketDataHubMapTooltipBgColor: '#ffffff',
+      marketDataHubMapTooltipLabelsColor: '#333333',
+      marketDataHubMapTooltipTitleColor: '#333333',
+      marketDataHubMapTooltipValuesColor: '#333333',
+
+      marketDataHubTableBgColor: '#ffffff',
+      marketDataHubTableDatePickerColor: '#000000',
+      marketDataHubTableHeaderColor: '#000000',
+      marketDataHubTableValuesColor: '#000000',
+
+      marketDataHubChartAxisLabelsColor: '#333333',
+      marketDataHubChartAxisLineColor: '#333333',
+      marketDataHubChartBgColor: '#ffffff',
+      marketDataHubChartEodBtnColor: '#3c3c3c',
+      marketDataHubChartEodBtnTextColor: '#ffffff',
+      marketDataHubChartGridColor: '#e6e6e6',
+      marketDataHubChartIntradayBtnColor: '#eb1000',
+      marketDataHubChartIntradayBtnTextColor: '#ffffff',
+      marketDataHubChartLegendsColor: '#333333',
+      marketDataHubChartLineColor: '#920600',
+      marketDataHubChartLotsColor: '#3c9bbd',
+      marketDataHubChartLotsLabelColor: '#000000',
+      marketDataHubChartTooltipBgColor: '#ffffff',
+      marketDataHubChartTooltipDateColor: '#333333',
+      marketDataHubChartVolumeColor: '#194c5e',
+
+      marketDataHubPictoBoxBgColor: '#e2e2e2',
+      marketDataHubPictoBoxTitleColor: '#000000',
+      marketDataHubPictoBoxPriceColor: '#eb1000',
+      marketDataHubPictoBoxValuesColor: '#000000',
+      marketDataHubPictoBoxLabelsColor: '#000000',
+      marketDataHubPictoBoxCandleTopColor: '#eb1000',
+      marketDataHubPictoBoxCandleBottomColor: '#000000'
+    },
+    init: async () => {
+      eex_marketDataHub_1765265036641.generatedId = eex_marketDataHub_1765265036641.generatedId + '_0';
+      eex_marketDataHub_1765265036641.rootDiv = $('#eex_marketDataHub_1765265036641');
+      eex_marketDataHub_1765265036641.rootDiv.hide();
+
+      await fetch('https://eds.eex-group.com/widgets/pub/lib/v1/templates/customized-solution/marketDataHubTemplate.html')
+        .then((res) => res.text())
+        .then(async (responseText) => {
+          const contractsToBeLoaded = [];
+          for (let i = 0; i < eex_marketDataHub_1765265036641.appliedParameters.contracts.length; i++) {
+            const json = JSON.stringify(eex_marketDataHub_1765265036641.appliedParameters.contracts[i]);
+            contractsToBeLoaded.push(json);
+          }
+          const contractsToBeLoadedAsString = '[' + contractsToBeLoaded.toString() + ']';
+
+          const upcomingAreasToBeLoaded = [];
+          for (let i = 0; i < eex_marketDataHub_1765265036641.appliedParameters.upcomingAreas.length; i++) {
+            const json = JSON.stringify(eex_marketDataHub_1765265036641.appliedParameters.upcomingAreas[i]);
+            upcomingAreasToBeLoaded.push(json);
+          }
+          const upcomingAreasToBeLoadedAsString = '[' + upcomingAreasToBeLoaded.toString() + ']';
+
+          const upcomingProductsToBeLoaded = [];
+          for (let i = 0; i < eex_marketDataHub_1765265036641.appliedParameters.upcomingProducts.length; i++) {
+            const json = JSON.stringify(eex_marketDataHub_1765265036641.appliedParameters.upcomingProducts[i]);
+            upcomingProductsToBeLoaded.push(json);
+          }
+          const upcomingProductsToBeLoadedAsString = '[' + upcomingProductsToBeLoaded.toString() + ']';
+
+          let generatedCode = responseText.replaceAll('{generatedIDi}', eex_marketDataHub_1765265036641.generatedId);
+          generatedCode = generatedCode.replaceAll('generatedIDi', eex_marketDataHub_1765265036641.generatedId);
+          generatedCode = generatedCode.replaceAll('{baseUrli}', eex_marketDataHub_1765265036641.baseUrl);
+          generatedCode = generatedCode.replaceAll('{marketDataHubCustomizeUrli}', eex_marketDataHub_1765265036641.customizeUrl);
+
+          generatedCode = generatedCode.replaceAll('{selectedContractsi}', contractsToBeLoadedAsString);
+          generatedCode = generatedCode.replaceAll('{upcomingAreasi}', upcomingAreasToBeLoadedAsString);
+          generatedCode = generatedCode.replaceAll('{upcomingProductsi}', upcomingProductsToBeLoadedAsString);
+
+          generatedCode = generatedCode.replaceAll('{marketDataHubMainBgColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubMainBgColor);
+          generatedCode = generatedCode.replaceAll('{filterPanelBgColori}', eex_marketDataHub_1765265036641.appliedParameters.filterPanelBgColor);
+          generatedCode = generatedCode.replaceAll('{filterPanelLabelsColori}', eex_marketDataHub_1765265036641.appliedParameters.filterPanelLabelsColor);
+          generatedCode = generatedCode.replaceAll('{filterPanelGoBtnColori}', eex_marketDataHub_1765265036641.appliedParameters.filterPanelGoBtnColor);
+          generatedCode = generatedCode.replaceAll('{filterPanelGoBtnTextColori}', eex_marketDataHub_1765265036641.appliedParameters.filterPanelGoBtnTextColor);
+          generatedCode = generatedCode.replaceAll('{filterPanelResetBtnColori}', eex_marketDataHub_1765265036641.appliedParameters.filterPanelResetBtnColor);
+          generatedCode = generatedCode.replaceAll('{filterPanelResetBtnTextColori}', eex_marketDataHub_1765265036641.appliedParameters.filterPanelResetBtnTextColor);
+          generatedCode = generatedCode.replaceAll('{filterPanelRadioBtnColori}', eex_marketDataHub_1765265036641.appliedParameters.filterPanelRadioBtnColor);
+
+          generatedCode = generatedCode.replaceAll('{marketDataHubNavigationActiveBtnColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubNavigationActiveBtnColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubNavigationActiveBtnTextColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubNavigationActiveBtnTextColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubNavigationBtnColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubNavigationBtnColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubNavigationBtnTextColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubNavigationBtnTextColor);
+
+          generatedCode = generatedCode.replaceAll('{marketDataHubPriceTickerBgColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubPriceTickerBgColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubPriceTickerContractColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubPriceTickerContractColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubPriceTickerLastUpdatedColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubPriceTickerLastUpdatedColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubPriceTickerMoreDetailsColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubPriceTickerMoreDetailsColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubPriceTickerMoreDetailsTextColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubPriceTickerMoreDetailsTextColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubPriceTickerMoreDetailsLinkColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubPriceTickerMoreDetailsLinkColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubPriceTickerNegativeColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubPriceTickerNegativeColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubPriceTickerPositiveColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubPriceTickerPositiveColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubPriceTickerPriceColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubPriceTickerPriceColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubPriceTickerPriceLabelColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubPriceTickerPriceLabelColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubPriceTickerUnchangedColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubPriceTickerUnchangedColor);
+
+          generatedCode = generatedCode.replaceAll('{marketDataHubMapActiveCountryColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubMapActiveCountryColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubMapComingSoonCountryColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubMapComingSoonCountryColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubMapActiveCountryHoverColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubMapActiveCountryHoverColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubMapInactiveCountryColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubMapInactiveCountryColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubMapLabelsColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubMapLabelsColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubMapLegendsColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubMapLegendsColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubMapRadioLabelsColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubMapRadioLabelsColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubMapTooltipBgColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubMapTooltipBgColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubMapTooltipLabelsColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubMapTooltipLabelsColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubMapTooltipTitleColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubMapTooltipTitleColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubMapTooltipValuesColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubMapTooltipValuesColor);
+
+          generatedCode = generatedCode.replaceAll('{marketDataHubTableBgColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubTableBgColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubTableDatePickerColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubTableDatePickerColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubTableHeaderColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubTableHeaderColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubTableValuesColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubTableValuesColor);
+
+          generatedCode = generatedCode.replaceAll('{marketDataHubChartAxisLabelsColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubChartAxisLabelsColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubChartAxisLineColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubChartAxisLineColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubChartBgColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubChartBgColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubChartEodBtnColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubChartEodBtnColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubChartEodBtnTextColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubChartEodBtnTextColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubChartGridColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubChartGridColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubChartIntradayBtnColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubChartIntradayBtnColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubChartIntradayBtnTextColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubChartIntradayBtnTextColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubChartLegendsColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubChartLegendsColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubChartLineColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubChartLineColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubChartLotsColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubChartLotsColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubChartLotsLabelColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubChartLotsLabelColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubChartTooltipBgColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubChartTooltipBgColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubChartTooltipDateColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubChartTooltipDateColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubChartVolumeColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubChartVolumeColor);
+
+          generatedCode = generatedCode.replaceAll('{marketDataHubPictoBoxBgColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubPictoBoxBgColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubPictoBoxTitleColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubPictoBoxTitleColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubPictoBoxPriceColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubPictoBoxPriceColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubPictoBoxValuesColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubPictoBoxValuesColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubPictoBoxLabelsColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubPictoBoxLabelsColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubPictoBoxCandleTopColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubPictoBoxCandleTopColor);
+          generatedCode = generatedCode.replaceAll('{marketDataHubPictoBoxCandleBottomColori}', eex_marketDataHub_1765265036641.appliedParameters.marketDataHubPictoBoxCandleBottomColor);
+
+          generatedCode = generatedCode.replaceAll('{marketDataHubWithOverviewi}', eex_marketDataHub_1765265036641.appliedParameters.withOverview);
+          generatedCode = generatedCode.replaceAll('{marketDataHubWithTableViewi}', eex_marketDataHub_1765265036641.appliedParameters.withTableView);
+          generatedCode = generatedCode.replaceAll('{marketDataHubWithChartViewi}', eex_marketDataHub_1765265036641.appliedParameters.withChartView);
+          generatedCode = generatedCode.replaceAll('{withOpenInterestGrossi}', eex_marketDataHub_1765265036641.appliedParameters.withOpenInterestGross);
+          generatedCode = generatedCode.replaceAll('{withOpenInterestInLotsi}', eex_marketDataHub_1765265036641.appliedParameters.withOpenInterestInLots);
+          generatedCode = generatedCode.replaceAll('{marketDataHubWithVolumei}', eex_marketDataHub_1765265036641.appliedParameters.withVolume);
+          generatedCode = generatedCode.replaceAll('{marketDataHubWithLotsi}', eex_marketDataHub_1765265036641.appliedParameters.withLots);
+
+          const libsWrapper = document.createElement('div');
+          eex_marketDataHub_1765265036641.rootDiv.append(libsWrapper);
+
+          const wrapper = document.createElement('div');
+          wrapper.innerHTML = generatedCode;
+
+          const loadedScriptSrcs = new Set();
+          loadedScriptSrcs.add('https://eds.eex-group.com/widgets/pub/lib/v1/jquery/jquery-3.6.4.min.js');
+          const originalAppendChild  = Node.prototype.appendChild;
+          const originalInsertBefore = Node.prototype.insertBefore;
+
+          const shouldSkipScript = node => {
+            if (!node || node.tagName !== 'SCRIPT' || !node.src) {
+              return false;
+            }
+
+            const normalized = node.src;
+            if (loadedScriptSrcs.has(normalized)) {
+              return true;
+            }
+
+            loadedScriptSrcs.add(normalized);
+            return false;
+          };
+
+          Node.prototype.appendChild = function appendChildPatched(node) {
+            if (shouldSkipScript(node)) {
+              return node;
+            }
+
+            return originalAppendChild.call(this, node);
+          };
+
+          Node.prototype.insertBefore = function insertBeforePatched(node, refNode) {
+            if (shouldSkipScript(node)) {
+              return node;
+            }
+
+            return originalInsertBefore.call(this, node, refNode);
+          };
+
+          const scripts = Array.from(wrapper.querySelectorAll('script'));
+
+          // Load jQuery first if needed
+          const jqueryScript = scripts.find(s => s && s.src && s.src.includes('jquery'));
+          const loadScript = (script) => {
+            return new Promise(resolve => {
+              const newScript = document.createElement('script');
+              if (script.src) {
+                libsWrapper.appendChild(newScript);
+              }
+              if (script.type) {
+                newScript.type = script.type;
+              }
+              if (script.src) {
+                newScript.onload = resolve;
+                newScript.src = script.src;
+              } else {
+                newScript.textContent = script.textContent;
+                resolve();
+              }
+            });
+          };
+
+          const loadScriptsPromise = () => {
+            return new Promise(async (resolve) => {
+              if (jqueryScript) {
+                await loadScript(jqueryScript).catch((err) => console.error('Failed to load jQuery: ', err));
+              }
+              for (const s of scripts) {
+                if(!jqueryScript || s.src !== jqueryScript.src) {
+                  await loadScript(s).then(()=> {
+                    loadedScriptSrcs.add(s.src);
+                  }).catch((err) => console.error('Failed to load script: ', err));
+                }
+              }
+              resolve();
+            });
+          };
+
+          loadScriptsPromise().then(async () => {
+            eex_marketDataHub_1765265036641.rootDiv.append(wrapper);
+            eex_marketDataHub_1765265036641.rootDiv.show();
+          });
+        }).catch((error) => console.error('Failed to fetch page: ', error));
+    }
+  };
+
+  getAppliedParameters = () => {
+    return {
+      widget: 'marketDataHub',
+      configuration: eex_marketDataHub_1765265036641.appliedParameters
+    };
+  };
+
+  eex_marketDataHub_1765265036641.init();
+</script>
+
+

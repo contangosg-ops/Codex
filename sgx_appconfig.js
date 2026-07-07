@@ -1,0 +1,1 @@
+const config=document.querySelector("sgx-config-service");

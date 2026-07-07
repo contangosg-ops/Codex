@@ -6,9 +6,18 @@ venv/
 env/
 .env
 .agents/
+.cache/
 .codex/
 *.log
+*.tmp
+*.temp
+
+# Local credentials and generated/private market data
+credentials.json
+token.json
+attachments/
 *.xlsx
+sgx_nlt_*.csv
 
 # OS files
 Thumbs.db
@@ -17,8 +26,3 @@ Desktop.ini
 # Editor files
 .vscode/
 .idea/
-
-# Logs and temporary files
-*.log
-*.tmp
-*.temp
