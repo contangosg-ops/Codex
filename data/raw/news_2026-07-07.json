@@ -1,0 +1,47 @@
+[
+  {
+    "published_at": "2026-07-07",
+    "event_date": "2026-07-07",
+    "title": "Pilbara Ports 可访问统计页中 Port Hedland 最新月度数据仍为 2026 年 5 月",
+    "summary": "Pilbara Ports 的 Port Hedland 统计页面列出 2026 年 1-5 月月度 PDF。5 月 cargo-by-destination PDF 显示，2026-05-01 至 2026-05-31，Port Hedland 铁矿石装港量为 51,029,634 吨，全部装港货物为 51,369,013.24 吨。",
+    "region": "Australia",
+    "affected_market": "Capesize / iron ore logistics",
+    "impact_direction": "Not assessed",
+    "impact_horizon": "Not assessed",
+    "impact_strength": "",
+    "confidence": "High",
+    "source": "Pilbara Ports",
+    "source_url": "https://www.pilbaraports.com.au/ports/port-of-port-hedland/about-port-of-hedland/port-statistics-reports",
+    "verified": true
+  },
+  {
+    "published_at": "2026-07-03",
+    "event_date": "2026-07-03",
+    "title": "媒体报道 Goldman Sachs 下调 Fortescue 评级",
+    "summary": "The Australian 报道称，Goldman Sachs 下调 Fortescue 评级，并提到短期铁矿石前景、CMRG 争议和矿山替代问题。此处仅作为新闻/研报摘要收录。",
+    "region": "Australia",
+    "affected_market": "Iron ore / Capesize cargo base",
+    "impact_direction": "Not assessed",
+    "impact_horizon": "Not assessed",
+    "impact_strength": "",
+    "confidence": "Medium",
+    "source": "The Australian",
+    "source_url": "https://www.theaustralian.com.au/business/mining-energy/andrew-forrestled-iron-ore-miners-earnings-future-called-into-question-by-goldman-sachs-downgrade/news-story/781a2ee104e876f6f6d2293aa89689d8",
+    "verified": true
+  },
+  {
+    "published_at": "2026-07-01",
+    "event_date": "2026-07-01",
+    "title": "Alcoa 拟收购 South32 铝土矿、氧化铝和铝资产",
+    "summary": "Wall Street Journal 报道称，Alcoa 同意收购 South32 位于澳洲、巴西和南非的铝产业链资产，交易价值最高约 56 亿美元。",
+    "region": "Australia / Brazil / South Africa",
+    "affected_market": "Bauxite / alumina",
+    "impact_direction": "Not assessed",
+    "impact_horizon": "Not assessed",
+    "impact_strength": "",
+    "confidence": "Medium",
+    "source": "Wall Street Journal",
+    "source_url": "https://www.wsj.com/business/deals/alcoa-to-acquire-mining-processing-assets-from-south32-for-4-1-billion-ffd85a31",
+    "verified": true
+  }
+]

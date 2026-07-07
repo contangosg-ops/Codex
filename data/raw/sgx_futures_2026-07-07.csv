@@ -1,0 +1,2 @@
+date,exchange,contract_code,contract_name,contract_month,last_price,currency,unit,daily_change,daily_change_pct,volume,open_interest,source,source_url,collected_at,note
+2026-07-07,SGX,FEFQ26,SGX IODEX Iron Ore Futures,2026-08,98.35,USD,MT,0.15,0.15%,600,364216,SGX,https://api.sgx.com/derivatives/v1.0/contract-code/FEF?category=futures,2026-07-07T10:52:45+08:00,"SGX delayed futures data for FEF front visible contract from contract-code endpoint; record-update-time 20260707_031937."

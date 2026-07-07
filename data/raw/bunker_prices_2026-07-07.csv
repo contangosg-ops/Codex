@@ -1,0 +1,9 @@
+date,port,fuel_grade,price_usd_per_tonne,daily_change,daily_change_pct,source,source_url,collected_at,note
+2026-07-06,Singapore,VLSFO,638.50,-25.00,,Ship & Bunker,https://shipandbunker.com/prices/apac,2026-07-07T10:52:45+08:00,"APAC page shows Singapore prices dated Jul 06."
+2026-07-06,Singapore,MGO,905.50,15.50,,Ship & Bunker,https://shipandbunker.com/prices/apac,2026-07-07T10:52:45+08:00,"APAC page shows Singapore prices dated Jul 06."
+2026-07-06,Singapore,IFO380,447.00,1.50,,Ship & Bunker,https://shipandbunker.com/prices/apac,2026-07-07T10:52:45+08:00,"APAC page shows Singapore prices dated Jul 06."
+2026-07-06,Rotterdam,VLSFO,575.50,-4.00,,Ship & Bunker,https://shipandbunker.com/prices,2026-07-07T10:52:45+08:00,"World bunker price page shows latest available Rotterdam prices."
+2026-07-06,Rotterdam,MGO,928.50,-0.50,,Ship & Bunker,https://shipandbunker.com/prices,2026-07-07T10:52:45+08:00,"World bunker price page shows latest available Rotterdam prices."
+2026-07-06,Rotterdam,IFO380,439.50,-9.00,,Ship & Bunker,https://shipandbunker.com/prices,2026-07-07T10:52:45+08:00,"World bunker price page shows latest available Rotterdam prices."
+2026-07-06,Zhoushan,VLSFO,,,,Ship & Bunker,https://shipandbunker.com/prices/apac,2026-07-07T10:52:45+08:00,"Zhoushan is listed on APAC page but price requires login/subscription; no public value recorded."
+2026-07-06,Zhoushan,IFO380,,,,Ship & Bunker,https://shipandbunker.com/prices/apac,2026-07-07T10:52:45+08:00,"Zhoushan is listed on APAC page but price requires login/subscription; no public value recorded."

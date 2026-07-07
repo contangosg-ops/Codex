@@ -1,0 +1,22 @@
+{
+  "timezone": "Asia/Singapore",
+  "unit_rules": {
+    "weight": "metric tons",
+    "freight": "USD/day or USD/ton",
+    "percent": "consistent percent format"
+  },
+  "report_mode": "objective_information_aggregation",
+  "excluded_outputs": [
+    "investment judgment",
+    "trading recommendation",
+    "long or short recommendation",
+    "position suggestion",
+    "subjective score"
+  ],
+  "required_metadata": [
+    "source",
+    "source_url",
+    "collected_at",
+    "published_at_or_date"
+  ]
+}

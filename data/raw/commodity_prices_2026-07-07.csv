@@ -1,0 +1,5 @@
+date,commodity,benchmark,price,currency,unit,daily_change,daily_change_pct,source,source_url,collected_at,note
+2026-07-07,铁矿石,铁矿石主力连续期货,742.50,CNY,MT,3.50,0.47%,Sina Futures,https://hq.sinajs.cn/?list=nf_I0,2026-07-07T10:52:45+08:00,"公开行情接口：铁矿石连续；最新价 742.50，昨结/前值 739.00，据此计算涨跌。"
+2026-07-07,焦煤,焦煤主力连续期货,1283.00,CNY,MT,-6.00,-0.47%,Sina Futures,https://hq.sinajs.cn/?list=nf_JM0,2026-07-07T10:52:45+08:00,"公开行情接口：焦煤连续；最新价 1283.00，昨结/前值 1289.00，据此计算涨跌。"
+2026-07-07,氧化铝,氧化铝主力连续期货,2699.00,CNY,MT,-18.00,-0.66%,Sina Futures,https://hq.sinajs.cn/?list=nf_AO0,2026-07-07T10:52:45+08:00,"公开行情接口：氧化铝连续；最新价 2699.00，昨结/前值 2717.00，据此计算涨跌。"
+2026-07-07,铝矾土,铝矾土公开价格,,,,,,Public open source not found,,2026-07-07T10:52:45+08:00,"No open, current, source-verifiable bauxite futures or spot price found in this pass."

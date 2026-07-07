@@ -1,0 +1,75 @@
+{
+  "primary_sources": [
+    "Baltic Exchange",
+    "official port data",
+    "customs data",
+    "mining company announcements",
+    "listed company announcements",
+    "exchange data",
+    "clearing house data",
+    "government data",
+    "company financial reports",
+    "company production reports"
+  ],
+  "secondary_sources": [
+    "Reuters",
+    "Bloomberg",
+    "Fastmarkets",
+    "Argus",
+    "Mysteel",
+    "S&P Global",
+    "TradeWinds",
+    "Lloyd's List",
+    "Splash247"
+  ],
+  "tracked_public_sources": [
+    {
+      "name": "Pilbara Ports",
+      "use": "Australia Pilbara shipment and port operational information",
+      "url": "https://www.pilbaraports.com.au/"
+    },
+    {
+      "name": "BHP",
+      "use": "company announcements, production reports and iron ore updates",
+      "url": "https://www.bhp.com/"
+    },
+    {
+      "name": "Vale",
+      "use": "company announcements, production reports and iron ore updates",
+      "url": "https://www.vale.com/"
+    },
+    {
+      "name": "Fortescue",
+      "use": "company announcements, production reports and iron ore updates",
+      "url": "https://www.fortescue.com/"
+    },
+    {
+      "name": "Rio Tinto",
+      "use": "company announcements, production reports and iron ore updates",
+      "url": "https://www.riotinto.com/"
+    },
+    {
+      "name": "Anglo American",
+      "use": "company announcements and Minas-Rio related updates",
+      "url": "https://www.angloamerican.com/"
+    },
+    {
+      "name": "CSN",
+      "use": "company announcements and Brazilian iron ore updates",
+      "url": "https://www.csn.com.br/"
+    }
+  ],
+  "low_priority_sources": [
+    "social media",
+    "forums",
+    "unsigned reposts",
+    "unverified market rumors",
+    "private chat records"
+  ],
+  "excluded_sources": [
+    "FFA Recap emails",
+    "broker recap emails",
+    "chat software FFA transaction reposts",
+    "unverified OTC transaction records"
+  ]
+}

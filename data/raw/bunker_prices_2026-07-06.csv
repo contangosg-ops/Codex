@@ -1,0 +1,9 @@
+date,port,fuel_grade,price_usd_per_tonne,daily_change,daily_change_pct,source,source_url,collected_at,note
+2026-07-03,Singapore,VLSFO,663.50,-3.50,,Ship & Bunker,https://shipandbunker.com/prices/apac,2026-07-06T13:49:27+08:00,"Asia/Pacific page shows Singapore VLSFO/MGO/IFO380 dated Jul 03."
+2026-07-03,Singapore,MGO,890.00,-12.50,,Ship & Bunker,https://shipandbunker.com/prices/apac,2026-07-06T13:49:27+08:00,"Low sulfur distillate reference; page labels MGO."
+2026-07-03,Singapore,IFO380,445.50,7.00,,Ship & Bunker,https://shipandbunker.com/prices/apac,2026-07-06T13:49:27+08:00,"High sulfur fuel oil proxy; page labels IFO380."
+2026-07-03,Rotterdam,VLSFO,579.50,-7.00,,Ship & Bunker,https://shipandbunker.com/prices,2026-07-06T13:49:27+08:00,"World bunker price page."
+2026-07-03,Rotterdam,MGO,929.00,5.50,,Ship & Bunker,https://shipandbunker.com/prices,2026-07-06T13:49:27+08:00,"Low sulfur distillate reference; page labels MGO."
+2026-07-03,Rotterdam,IFO380,448.50,-2.50,,Ship & Bunker,https://shipandbunker.com/prices,2026-07-06T13:49:27+08:00,"High sulfur fuel oil proxy; page labels IFO380."
+2026-07-03,Zhoushan,VLSFO,,,,Ship & Bunker,https://shipandbunker.com/prices/apac,2026-07-06T13:49:27+08:00,"Zhoushan is listed on APAC page but price requires login/subscription; no public value recorded."
+2026-07-03,Zhoushan,IFO380,,,,Ship & Bunker,https://shipandbunker.com/prices/apac,2026-07-06T13:49:27+08:00,"Zhoushan is listed on APAC page but price requires login/subscription; no public value recorded."
