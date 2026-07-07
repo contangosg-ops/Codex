@@ -9,3 +9,16 @@ env/
 .codex/
 *.log
 *.xlsx
+
+# OS files
+Thumbs.db
+Desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
